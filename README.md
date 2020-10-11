@@ -15,4 +15,16 @@ XML должен быть разлои загружен в Elasticsearch чер�
 2) Вызвать команду docker-compose up
 
 **Реализованные API**
-http://192.168.99.100:8080/api/v1/multiSearch/search/products/categories/19
+
+1) _загрузка URL с XML (POST запрос):_
+http://192.168.99.100:8080/api/v1/upload
+{
+    "strUrlLink":"http://frontend.tanuki.ru/feeds/raiden-delivery-club/"
+}
+
+2) _полнотекстовый поиск (GET запрос):_
+http://192.168.99.100:8080/api/v1/multiSearch/search/products?query={text}
+
+3) _фильтрация по ид категории (GET запрос):_
+http://192.168.99.100:8080/api/v1/multiSearch/search/products/categories/{id}
+
