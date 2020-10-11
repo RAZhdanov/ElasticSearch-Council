@@ -24,8 +24,8 @@ http://192.168.99.100:8080/api/v1/upload
 }
 
 2) _полнотекстовый поиск (GET запрос):_
-http://192.168.99.100:8080/api/v1/multiSearch/search/products?query={text}
+http://192.168.99.100:8080/api/v1/multiSearch/products?query={text}
 
 3) _фильтрация по ид категории (GET запрос):_
-http://192.168.99.100:8080/api/v1/multiSearch/search/products/categories/{id}
+http://192.168.99.100:8080/api/v1/multiSearch/products/categories/{id}
 
